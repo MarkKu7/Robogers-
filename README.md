@@ -1,6 +1,6 @@
 Specs
 
-Test(1): Coverts input to an integer from a string
+Test(1): Coverts input from a string to an integer
 input("20").toEqual(20)
 
 Test(2): Prompt user when user doesn't enter a integer
