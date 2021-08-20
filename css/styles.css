@@ -1,3 +1,11 @@
 #alert {
   display: none;
 }
+
+body {
+  background-color: rgb(0, 89, 255);
+}
+
+.container {
+  font-family: 'Courier New', Courier, monospace;
+}
