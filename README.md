@@ -30,6 +30,7 @@ Test(2): returns "beep" if 1 is inputted, "boop" if 2 is inputted, "won't you be
 input(1).toEqual(0,"Beep!")
 input(2).toEqual(0,"Beep!,"Boop!")
 input(3).toEqual(0,"Beep!,"Boop!","Won't you be my neighbor?")
+Program will prioritize in this order: Numbers that contain a 3> a 2> a 1
 
 input: 5
 expected outcome: 

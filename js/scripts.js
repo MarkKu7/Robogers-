@@ -1,6 +1,8 @@
+//Business Logic
+
 function input(number) {
   const inputnumber = number.toString();
-   if (inputnumber.includes("3")) {
+  if (inputnumber.includes("3")) {
     return "Won't you be my neighbor?"
   } else if (inputnumber.includes("2")) {
     return "Boop!";
@@ -11,13 +13,14 @@ function input(number) {
   }
 }
 
+//UI Logic
+
 $(document).ready(function () {
   $("form#Count").submit(function (event) {
     event.preventDefault();
     const userInput = $("#userInput").val();
     countInput(userInput);
   });
-  
 
   function countInput(userInput) {
     $("#output").empty();
