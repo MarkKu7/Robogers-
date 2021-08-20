@@ -21,6 +21,7 @@ $(document).ready(function () {
 
   function countInput(userInput) {
     $("#output").empty();
+    $("#alert").show();
     const userNumber = parseInt(userInput)
     for (i = 0; i <= userInput; i++) {
       $("#output").append(`<li>${input(i)}</li>`);
