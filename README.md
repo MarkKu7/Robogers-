@@ -23,23 +23,30 @@ N/A
 ## Specs
 Specs
 
-Test(1): Coverts input from a string to an integer
-input("20").toEqual(20)
+Test(1): 
+Describe: input("20").toEqual(20)
+Test: Coverts input from a string to an integer
+Expect: "20"
 
-Test(2): returns "beep" if 1 is inputted, "boop" if 2 is inputted, "won't you be my neighbor?" if 3 is inputted
-input(1).toEqual(0,"Beep!")
-input(2).toEqual(0,"Beep!,"Boop!")
-input(3).toEqual(0,"Beep!,"Boop!","Won't you be my neighbor?")
-Program will prioritize in this order: Numbers that contain a 3> a 2> a 1
+Test(2): 
+Describe: input(1)
+Test: returns "beep!" if 1 is inputted
+Expect: "Beep!"
 
-input: 5
-expected outcome: 
-0
-Beep!
-Boop!
-Won't you be my neighbor?
-4
-5
+Test(3):
+Describe: input(2)
+Test: Returns Boop! if 2 is inputted
+Expect: "Boop!"
+
+Test (4):
+Describe: input(3)
+Test: Returns Won't you be my neighbor if 3 is inputted
+Expect: "Won't you be my neighbor?
+
+Test (5):
+Describe: input(32)
+Test: Program will prioritize in this order: Numbers that contain a 3> a 2> a 1
+Expect: "Won't you be my neighbor, Boop!, Won't you be my neighbor, etc..." 
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
